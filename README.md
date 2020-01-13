@@ -1,9 +1,6 @@
 ## Welcome to Introduction to UNIX 
 
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  Today I am going to tell you some basic things about UNIX operating system whatever I learned from a short tutorial on introduction to UNIX for beginners.
 
 ```markdown
 Syntax highlighted code block
