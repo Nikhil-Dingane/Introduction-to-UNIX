@@ -8,3 +8,22 @@
 
 # Types of UNIX :
   There are so many distros of UNIX are avaible. The most popular varieties of UNIX are Sun Solaris, GNU/Linux, and MacOS X. 
+
+# UNIX OS:
+  UNIX is made up of shell,kernel and programs.
+  
+  **Kernel**:- It is called as heart of the operating systems. It allocates time and memory for the processes.
+  **Shell**:-  It is the interface between the kernel and user. It takes the commands from the user, interpretes them and give it to the kernel for the execution.
+  
+  In UNIX everything is considered as either file or process.
+  Process means the program in the running state.
+  File is the collection of the data.
+  There are two types of file as normal file and directories.
+  
+  All the files are grouped together in the directory structure. The file-system is arranged in a hierarchical structure, like an inverted tree. The top of the hierarchy is traditionally called root (written as a slash / ).
+  
+  There teminal in UNIX operating system where we can run our commands.
+  
+## Basic UNIX Commands in Short
+  **ls**:-
+    This command is used for display the name of all files and folders from the specified directory.
