@@ -50,7 +50,7 @@ There are various options are available with the ls. You can explore them by usi
 **rmdir dir_name**:-
     This command is used for removing the directories.
     
-**cat file1 file2 **:-
+**cat file1 file2**:-
     cat stands for concatenate. The command cat can be used to display the contents of a file on the screen.
     
 **less file**:-
@@ -65,7 +65,7 @@ There are various options are available with the ls. You can explore them by usi
  **grep 'keyword' file** :-
 	search a file for keywords. 
 
- ** wc file** 
+ **wc file** 
 	 count number of lines/words/characters in file
 
 ## Redirection
@@ -78,7 +78,7 @@ There are various options are available with the ls. You can explore them by usi
 **command < file**:-
 	Redirect the input to command from the file.
 
-##Pipes:##
+## Pipes: 
 **command1 | command2**:-
 	It gives the output of the  command1 as input for command2.
 
@@ -88,24 +88,24 @@ There are various options are available with the ls. You can explore them by usi
 **who**:- 
 	List the users who currently logged in the system.
 
-##Wildcards:##
+## Wildcards:##
 **The * wildcard**: -
 	The character * is called a wildcard, and will match against one or more character(s) in a file (or directory) name.
 
 **The * wildcard**:
 	The character ? will match exactly one character.
 
-##Getting help##:
+## Getting help:
 **man command**:
 	This will show you the manual page of the command. This page demonstrates the use of the specified command.
 
 **whatis command**:
 	This will give a description in one line of the specified command.
 
-**apropos**:
+**apropos keyword**:
 	When you don't know the exact command then you can use the apropos command with the related keyword which will show all related commands with that keyword.
 
-##File Permissions##:
+## File Permissions:
 	In UNIX, every file has its associated permissions of r for reading, w for write and e for executing.
 	By using ls command we can see all associated permissions of the files as follows:
 	**ls -l**
