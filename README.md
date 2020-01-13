@@ -6,3 +6,5 @@
   
   UNIX also has graphical user interface like microsoft windows but we should have knowledge of UNIX commands to carried out the operations which can not be done by graphical programs or when the there is no graphical interactions like telnet session.
 
+#Types of UNIX
+
