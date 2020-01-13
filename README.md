@@ -106,11 +106,4 @@ There are various options are available with the ls. You can explore them by usi
 	When you don't know the exact command then you can use the apropos command with the related keyword which will show all related commands with that keyword.
 
 ## File Permissions:
-	In UNIX, every file has its associated permissions of r for reading, w for write and e for executing.
-	By using ls command we can see all associated permissions of the files as follows:
-	**ls -l**
-This command will show all the permissions of the file of file owner, group and others. 
-
-	In the case of a file, read means reading the file data, write the data in the file and execute means executing the file.
-	In the case of a directory, r means listing the files from the directory, w means creating new files in a directory and e means accessing the files from the directory.
 
