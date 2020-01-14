@@ -1,4 +1,4 @@
-## Welcome to Introduction to UNIX 
+# Welcome to Introduction to UNIX 
 
   Today I am going to tell you some basic things about UNIX operating system whatever I learned from a short tutorial on introduction to UNIX for beginners.
   
@@ -24,7 +24,7 @@
   
   There terminal in UNIX operating system where we can run our commands.
   
-## Basic UNIX Commands in Short
+# Basic UNIX Commands in Short
   **ls dir**:-
     This command is used to display the name of all files and folders from the specified directory or subdirectory.
 There are various options are available with the ls. You can explore them by using the internet. ~ denotes root directory.
@@ -60,50 +60,84 @@ There are various options are available with the ls. You can explore them by usi
     The head command writes the first ten lines of a file to the screen. 
 
  **tail  file**:-
-	 Display the last few lines of a file.
+     Display the last few lines of a file.
  
  **grep 'keyword' file** :-
-	search a file for keywords. 
+    search a file for keywords. 
 
  **wc file** 
-	 count number of lines/words/characters in file
+     count number of lines/words/characters in file
 
-## Redirection
+# Redirection
 **command > file**:-
-	Here > is used to write the output of the command as input to the file.
+    Here > is used to write the output of the command as input to the file.
 
 **command > file**:- 
-	Here >> is used to append and write the output of the command as input to the file.
+    Here >> is used to append and write the output of the command as input to the file.
 
 **command < file**:-
-	Redirect the input to command from the file.
+    Redirect the input to command from the file.
 
-## Pipes: 
+# Pipes: 
 **command1 | command2**:-
-	It gives the output of the  command1 as input for command2.
+    It gives the output of the  command1 as input for command2.
 
 **sort**:-
-	This command is used to display the given data in sorted order.
+    This command is used to display the given data in sorted order.
 
 **who**:- 
-	List the users who currently logged in the system.
+    List the users who currently logged in the system.
 
-## Wildcards:##
+# Wildcards:##
 **The * wildcard**: -
-	The character * is called a wildcard, and will match against one or more character(s) in a file (or directory) name.
+    The character * is called a wildcard, and will match against one or more character(s) in a file (or directory) name.
 
 **The * wildcard**:
-	The character ? will match exactly one character.
+    The character ? will match exactly one character.
 
-## Getting help:
+# Getting help:
 **man command**:
-	This will show you the manual page of the command. This page demonstrates the use of the specified command.
+    This will show you the manual page of the command. This page demonstrates the use of the specified command.
 
 **whatis command**:
-	This will give a description in one line of the specified command.
+    This will give a description in one line of the specified command.
 
 **apropos keyword**:
-	When you don't know the exact command then you can use the apropos command with the related keyword which will show all related commands with that keyword.
+   When you don't know the exact command then you can use the apropos command with the related keyword which will show all related commands with that keyword.
+   
+**File Permissions:**
+    In UNIX Each file (and directory) has associated access rights/permissions with it. 
+        *-rwxrw-r-- 1 admin1 admin1   64 Jan 13 12:20 newlist* 
+    As you can see above, r stands for read permission,w stands for write permission and x stands for execution permission.
+    
+**Access rights/permissions on files:**
+    **r** : It indicates read permission, that is the presence or absence of permission to read and copy the file
+    **w** : indicates write permission, that is the permission (or otherwise) to change a file
+    **x** : indicates execution permission, that is the permission to execute a file, where appropriate
 
-## File Permissions:
+**Access rights/permissions on directories:**
+    **r** : allows users to list files in the directory;
+    **w** : means that users may delete files from the directory or move files into it;
+    **x** : means the right to access files in the directory. This implies that you may read files in the directory provided you have read permission on the individual files.
+# Changing Access Rights/Permissions
+   By using *chmod* command we can change the permissions of the files or directories.
+   
+| Symbol  | Meaning   |
+|:-:|:-:|
+| u  | user  |
+|  g |  group |
+|  o |  other |
+| a  | all  |
+| r  | read  |
+| w  | write  |
+|  x | execute  |
+|  + | add permissions  |
+| -  | remove permissions  |
 
+examples:-
+    __*chmod go-rwx biglist*__
+        This command will remove read, write and execute permission of the file for group and others.
+    __*chmod a+rw biglist*__
+    This command will add read and write permissions to all.
+# Processes and Jobs :
+Executing program is called the process and each process has unique PID(process ID) by which it is uniquely identified.
